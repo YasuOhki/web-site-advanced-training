@@ -4,9 +4,34 @@
 // reset mixinを使用
 @include reset;
 
+/* ------------------ header ------------------ */
+.c-header__logo-img {
+    width: 120px;
+    height: auto;
+}
 /* ------------------ first-view ------------------ */
 .c-first-view__inner {
     padding: 0 100px;
+}
+.c-first-view__title-jp {
+    font-size: 30px;
+    line-height: 1.7;
+    letter-spacing: 0.05em;
+    color: $black;
+}
+.c-first-view__title {
+    font-size: 100px;
+    line-height: 1.0;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: $black;
+}
+.c-first-view__title-br {
+    display: none;
+
+    @media (max-width: 767px) {
+        display: block;
+    }
 }
 /* ------------------ about ------------------ */
 .l-about {
