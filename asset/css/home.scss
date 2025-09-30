@@ -113,6 +113,9 @@
     color: $gray;
 }
 /* ------------------ member ------------------ */
+.l-member {
+    margin-bottom: 100px;
+}
 .c-member__inner {
     display: flex;
     flex-direction: column;
@@ -146,18 +149,20 @@
 /* ------------------ footer ------------------ */
 .c-footer__inner {
     display: flex;
-    padding: 60px 80px;
+    padding: 60px 200px 60px 80px;
     justify-content: space-between;
 }
 .c-footer__logo {
     position: relative;
     top: 0px;
     left: 0px;
+    width: 200px;
+    height: auto;
 }
 .c-footer__contact {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 .c-contact__text {
@@ -167,6 +172,10 @@
     color: $white;
 }
 .c-contact__btn {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 220px;
 	height: 60px;
     background-color: $white;
@@ -175,13 +184,15 @@
     transition-duration: 0.5s;
 
     &:hover {
-        color: $green;
+        background-color: $green;
+        .c-contact__link {
+            color: $white;
+        }
     }
 }
 .c-contact__link {
-    color: $black;
-
-    &:hover {
-        color: $white;
-    }
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.05em;
+    color: $gray;
 }

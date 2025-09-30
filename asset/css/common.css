@@ -185,21 +185,6 @@ a {
   height: 30px;
 }
 
-.c-page-top__btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #A3B195;
-}
-
-.c-page-top__link {
-  color: #fff;
-  transform: rotate(-90deg);
-}
-
 /* ------------------ main ------------------ */
 .l-main {
   margin-top: 180px;
@@ -281,6 +266,49 @@ a {
 
 /* ------------------ footer ------------------ */
 .l-footer {
+  position: relative;
   height: 300px;
   background-color: #585A55;
+}
+
+.c-page-top__btn-wrapper {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin-top: -100px;
+  margin-right: 50px;
+}
+
+.c-page-top__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-color: #A3B195;
+  transform: rotate(-90deg);
+}
+
+.c-page-top__btn-img {
+  width: 30%;
+  height: auto;
+}
+
+.c-footer__nav-item {
+  margin-bottom: 25px;
+}
+.c-footer__nav-item:last-child {
+  margin-bottom: 0;
+}
+
+.c-footer__nav-link {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+.c-footer__nav-link:hover {
+  color: #BBBFBA;
 }/*# sourceMappingURL=common.css.map */
