@@ -124,6 +124,12 @@ a {
   padding: 0 100px;
 }
 
+.c-title__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .c-first-view__title-jp {
   font-size: 30px;
   line-height: 1.7;
@@ -132,9 +138,9 @@ a {
 }
 
 .c-first-view__title {
-  font-size: 100px;
-  line-height: 1;
-  font-weight: 400;
+  display: inline-block;
+  font-size: 80px;
+  line-height: 1.25;
   letter-spacing: 0.05em;
   color: #585A55;
 }
@@ -146,6 +152,10 @@ a {
   .c-first-view__title-br {
     display: block;
   }
+}
+
+.c-first-view__KV {
+  margin-top: 46px;
 }
 
 /* ------------------ about ------------------ */
