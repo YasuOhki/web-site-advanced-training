@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>佐渡建築設計スタジオ</title>
+    <title>training_佐渡建築設計スタジオ</title>
     <link rel="stylesheet" href="asset/css/swiper.css">
     <link rel="stylesheet" href="asset/css/common.css">
     <link rel="stylesheet" href="asset/css/home.css">
@@ -92,7 +92,7 @@
 
         <!-- about -->
         <section class="l-section l-about">
-            <div class="c-section__inner c-about__inner">
+            <div class="c-about__inner">
                 <div class="c-section-title c-about__title">ABOUT US</div>
                 <div class="c-section-content c-about__content">
                     日本では昔から安らぎと温かみのある木組みの家が愛されてきました。
@@ -100,9 +100,11 @@
                     その魅力を最大限に引き出すために、私たちは、選りすぐりの自然素材のみを使用します。
                     長く愛される、美しい木組の家を建てることが、私たち佐渡建築設計スタジオの仕事です。
                 </div>
-                <div class="c-more-info__btn-pc c-about__more-info-pc">
-                    <a href="#" class="c-about__more-info-link">MORE</a>
-                </div>
+                <a href="#" class="c-more-info__btn-pc c-about__more-info-pc">
+                    <div class="c-more-info__btn-pc-text">
+                        MORE
+                    </div>
+                </a>
             </div>
             <div class="c-about__image">
                 <picture>
@@ -124,7 +126,7 @@
                     <div class="c-works__list">
                         <div class="c-works__item">
                             <div class="c-works__item-image">
-                                <img src="asset/media/images/home/home_works01.webp" alt="木組みの家のイラスト">
+                                <img src="asset/media/images/home/work01.webp" alt="木組みの家のイラスト">
                             </div>
                             <div class="c-works__item-title">古民家再生工事</div>
                             <div class="c-works__item-detail">
@@ -134,7 +136,7 @@
                         </div>
                         <div class="c-works__item">
                             <div class="c-works__item-image">
-                                <img src="asset/media/images/home/home_works01.webp" alt="木組みの家のイラスト">
+                                <img src="asset/media/images/home/work02.webp" alt="木組みの家のイラスト">
                             </div>
                             <div class="c-works__item-title">新築戸建</div>
                             <div class="c-works__item-detail">
@@ -144,8 +146,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="c-more-info__btn">
-                    <a href="#" class="c-works__more-info-link">MORE</a>
+                <div class="c-works-more-info__btn-wrapper">
+                    <div class="c-more-info__btn">
+                        <a href="#" class="c-works__more-info-link">MORE</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -154,64 +158,82 @@
         <section class="l-section l-member">
             <div class="c-section__inner c-member__inner">
                 <div class="c-section-title c-member__title">MEMBER</div>
-                <div class="c-member-image__list">
-                    <div class="c-member-image__item">
-                        <picture>
+                <div class="c-member__list swiper">
+                    <div class="swiper-wrapper">
+                        <div class="c-member__item swiper-slide">
+                        <picture class="c-member__item-image">
                             <source srcset="asset/media/images/home/member_Illust01@2x.webp" 2x>
                             <source srcset="asset/media/images/home/member_Illust01.webp" 1x>
                             <img src="asset/media/images/home/member_Illust01.webp" alt="メンバーのイラスト">
                         </picture>
+                        <div class="c-member__item-title">CEO</div>
+                        <div class="c-member__item-name">Taro Sado</div>
                     </div>
-                    <div class="c-member-image__item">
-                        <picture>
+                        <div class="c-member__item swiper-slide">
+                        <picture class="c-member__item-image">
                             <source srcset="asset/media/images/home/member_Illust02@2x.webp" 2x>
                             <source srcset="asset/media/images/home/member_Illust02.webp" 1x>
                             <img src="asset/media/images/home/member_Illust02.webp" alt="メンバーのイラスト">
                         </picture>
+                        <div class="c-member__item-title">一級建築士</div>
+                        <div class="c-member__item-name">Ichiko Yamada</div>
                     </div>
-                    <div class="c-member-image__item">
-                        <picture>
+                        <div class="c-member__item swiper-slide">
+                        <picture class="c-member__item-image">
                             <source srcset="asset/media/images/home/member_Illust03@2x.webp" 2x>
                             <source srcset="asset/media/images/home/member_Illust03.webp" 1x>
                             <img src="asset/media/images/home/member_Illust03.webp" alt="メンバーのイラスト">
                         </picture>
+                        <div class="c-member__item-title">一級建築士</div>
+                        <div class="c-member__item-name">Jiro Tanaka</div>
                     </div>
-                    <div class="c-member-image__item">
-                        <picture>
+                        <div class="c-member__item swiper-slide">
+                        <picture class="c-member__item-image">
                             <source srcset="asset/media/images/home/member_Illust04@2x.webp" 2x>
                             <source srcset="asset/media/images/home/member_Illust04.webp" 1x>
                             <img src="asset/media/images/home/member_Illust04.webp" alt="メンバーのイラスト">
                         </picture>
+                        <div class="c-member__item-title">一級建築士</div>
+                        <div class="c-member__item-name">Yuto Sakai</div>
                     </div>
-                    <div class="c-member-image__item">
-                        <picture>
+                        <div class="c-member__item swiper-slide">
+                        <picture class="c-member__item-image">
                             <source srcset="asset/media/images/home/member_Illust05@2x.webp" 2x>
                             <source srcset="asset/media/images/home/member_Illust05.webp" 1x>
                             <img src="asset/media/images/home/member_Illust05.webp" alt="メンバーのイラスト">
                         </picture>
+                        <div class="c-member__item-title">二級建築士</div>
+                        <div class="c-member__item-name">Hime Nakata</div>
                     </div>
-                    <div class="c-member-image__item">
-                        <picture>
+                        <div class="c-member__item swiper-slide">
+                        <picture class="c-member__item-image">
                             <source srcset="asset/media/images/home/member_Illust06@2x.webp" 2x>
                             <source srcset="asset/media/images/home/member_Illust06.webp" 1x>
                             <img src="asset/media/images/home/member_Illust06.webp" alt="メンバーのイラスト">
                         </picture>
+                        <div class="c-member__item-title">二級建築士</div>
+                        <div class="c-member__item-name">Ken Sato</div>
                     </div>
-                    <div class="c-member-image__item">
-                        <picture>
+                        <div class="c-member__item swiper-slide">
+                        <picture class="c-member__item-image">
                             <source srcset="asset/media/images/home/member_Illust07@2x.webp" 2x>
                             <source srcset="asset/media/images/home/member_Illust07.webp" 1x>
                             <img src="asset/media/images/home/member_Illust07.webp" alt="メンバーのイラスト">
                         </picture>
+                        <div class="c-member__item-title">インテリアコーディネーター</div>
+                        <div class="c-member__item-name">Hanako Yamamoto</div>
+                        </div>
                     </div>
-                    <div class="c-member__next-btn">
+                    <div class="c-member__next-btn swiper-button-next">
                         <a class="c-member__next-link" href="#">
-                            <img src="asset/media/images/common/arrow.svg" alt="次のメンバーを表示するボタン">
+                            <img src="asset/media/images/common/arrow.svg" width="13" height="13" alt="次のメンバーを表示するボタン">
                         </a>
                     </div>
                 </div>
-                <div class="c-more-info__btn">
-                    <a href="#" class="c-member__more-info-link">MORE</a>
+                <div class="c-works-more-info__btn-wrapper">
+                    <div class="c-more-info__btn">
+                        <a href="#" class="c-member__more-info-link">MORE</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -259,5 +281,25 @@
             </a>    
         </div>
     </footer>
+    <script src="asset/js/swiper_bundle.min.js"></script>
+    <script>
+        // Swiperの初期化
+        const memberSwiper = new Swiper('.c-member__list', {
+            slidesPerView: 5,
+            spaceBetween: 0,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 5,
+                },
+                320: {
+                    slidesPerView: 3,
+                }
+            }
+        });
+    </script>
 </body>
 </html>

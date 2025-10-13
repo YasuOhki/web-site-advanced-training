@@ -131,6 +131,7 @@ a {
 }
 
 .c-first-view__title-jp {
+  font-family: "CormorantGaramond", serif;
   font-size: 30px;
   line-height: 1.7;
   letter-spacing: 0.05em;
@@ -139,8 +140,10 @@ a {
 
 .c-first-view__title {
   display: inline-block;
-  font-size: 80px;
-  line-height: 1.25;
+  font-family: "CormorantGaramond", serif;
+  font-size: 100px;
+  font-weight: 500;
+  line-height: 1;
   letter-spacing: 0.05em;
   color: #585A55;
 }
@@ -155,7 +158,9 @@ a {
 }
 
 .c-first-view__KV {
-  margin-top: 46px;
+  margin-top: 60px;
+  width: 100%;
+  height: auto;
 }
 
 /* ------------------ about ------------------ */
@@ -164,12 +169,16 @@ a {
 }
 
 .c-about__inner {
+  width: 50%;
   display: flex;
   flex-direction: column;
+  padding: 0 80px 0 200px;
 }
 
 .c-about__image {
   width: 50%;
+  height: auto;
+  max-width: 800px;
 }
 @media (max-width: 1199px) {
   .c-about__image {
@@ -182,6 +191,11 @@ a {
   }
 }
 
+.c-about__more-info-pc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media (max-width: 767px) {
   .c-about__more-info-pc {
     display: none;
@@ -253,6 +267,13 @@ a {
   color: #BBBFBA;
 }
 
+.c-works-more-info__btn-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
 /* ------------------ member ------------------ */
 .l-member {
   margin-bottom: 100px;
@@ -264,30 +285,55 @@ a {
   position: relative;
 }
 
-.c-member-image__list {
-  display: flex;
-  flex-wrap: nowrap;
-  margin-right: -200px;
+.c-member__list {
+  margin: 40px -200px 0 0;
+  overflow: hidden;
 }
 @media (max-width: 767px) {
-  .c-member-image__list {
+  .c-member__list {
     margin-right: -35px;
   }
 }
 
-.c-member-image__item {
-  height: auto;
-  max-width: 236px;
-  max-height: 236px;
+.c-member__item {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 236px;
+}
+
+.c-member__item-image {
+  width: 236px;
+  height: 236px;
+}
+
+.c-member__item-title {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 1.7;
+  letter-spacing: 0.05em;
+  color: #BBBFBA;
+}
+
+.c-member__item-name {
+  font-size: 14px;
+  line-height: 2.4;
+  letter-spacing: 0.05em;
+  color: #585A55;
 }
 
 .c-member__next-btn {
   position: absolute;
   top: 50%;
   right: 10%;
-  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: #585A55;
+  z-index: 10;
+  cursor: pointer;
 }
 
 .c-member__next-link {

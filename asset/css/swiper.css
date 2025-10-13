@@ -287,16 +287,6 @@
   pointer-events: none;
 }
 
-.swiper-button-next:after {
-  font-family: swiper-icons;
-  font-size: var(--swiper-navigation-size);
-  text-transform: none !important;
-  letter-spacing: 0;
-  text-transform: none;
-  font-variant: initial;
-  line-height: 1;
-}
-
 .swiper-button-prev {
   left: 10px;
   right: auto;
@@ -330,7 +320,7 @@
 
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
-  content: "next";
+  content: "";
 }
 
 .swiper-button-lock {
