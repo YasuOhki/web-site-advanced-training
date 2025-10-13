@@ -5,3 +5,5 @@
 - HTML
 - CSS
   - SASS
+- JavaScript
+  - Swiper
